@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './component/header.js';
 import Icon from './component/menuIcon.js';
+import Information from './component/information.js';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         </header>
         <main>
           <Icon/>
+          <Information/>
         </main>
     </div>
   );

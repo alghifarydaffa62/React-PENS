@@ -6,6 +6,7 @@ import icon4 from '../img/innovation.png'
 import icon5 from '../img/job.png'
 import icon6 from '../img/nokorupsi.png'
 import barisan from '../img/barisanlogo.png'
+
 function Icon () {
     return(
         <div className="iconsection">
