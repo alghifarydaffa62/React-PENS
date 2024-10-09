@@ -1,6 +1,10 @@
 import logo from '../img/logo.png'
 import '../App.css'
 
+// function dropdown() {
+//     const menu = document.querySelectorAll(".menudrop")
+// }
+
 function Header() {
     return(
         <header className='navbar'>
@@ -10,9 +14,9 @@ function Header() {
                 <ul>
                     <li><a href='#home'>BERANDA</a></li>
                     <div className='drop'>
-                        <li><a href='#about'>TENTANG PENS</a></li>
+                        <li id="trigger"><a href='#about'>TENTANG PENS</a></li>
                         <div className='dropdown'>
-                            <ul>
+                            <ul className="menudrop">
                                 <li><a href='#PENS'>Tentang PENS</a></li>
                                 <li><a href='#PENS'>Visi Misi</a></li>
                                 <li><a href='#PENS'>Struktur Organisasi</a></li>

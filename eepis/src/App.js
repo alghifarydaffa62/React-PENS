@@ -1,15 +1,16 @@
 import './App.css';
 import Header from './component/header.js';
+import Icon from './component/menuIcon.js';
 
 function App() {
   return (
     <div className="App">
-      <div className='jumbotron'>
         <header>
           <Header/>
         </header>
-      </div>
-      
+        <main>
+          <Icon/>
+        </main>
     </div>
   );
 }
