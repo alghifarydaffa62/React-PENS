@@ -60,6 +60,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   gap: 4rem;
+  margin-block: 3rem;
 }
 .prestasi {
   width: 20%;
@@ -71,6 +72,9 @@ nav ul li a {
 .prestasi-content a {
   text-decoration: none;
   color: black;
+}
+.prestasi-content p {
+  color: gray;
 }
 .berita {
   width: 38%;
@@ -135,4 +139,16 @@ nav ul li a {
 .links li a {
   text-decoration: none;
   color: rgb(1, 34, 77);
+}
+.banner {
+  text-align: center;
+  margin-block: 5rem;
+}
+.BG img {
+  width: 50vw;
+  height: 30vh;
+}
+.banner img {
+  width: 85vw;
+  height: 50vh;
 }
