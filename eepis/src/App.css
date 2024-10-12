@@ -144,11 +144,55 @@ nav ul li a {
   text-align: center;
   margin-block: 5rem;
 }
-.BG img {
-  width: 50vw;
-  height: 30vh;
-}
 .banner img {
   width: 85vw;
   height: 50vh;
+}
+.pens-tv {
+  margin-top: 2rem;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.pens-tv h2 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pens-tv img {
+  width: 100%;
+  height: 40vh;
+}
+.widget {
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-block: 2rem;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: auto auto;
+}
+.grid img {
+  width: 18vw;
+  height: 25vh;
+}
+.joss {
+  width: 40vw;
+  height: 60vh;
+}
+.line {
+  width: 86%;
+  height: 3px;
+  background-color: rgb(13, 13, 53);
+  margin: auto;
+}
+.temukan {
+  display: flex;
+  justify-content: space-around;
 }

@@ -1,19 +1,18 @@
 import pmb from '../img/pmb.jpg'
-import bannerBG from '../img/BG-banner.svg'
+import penstv from '../img/penstv.jpg'
 import '../App.css'
 
 function Banner () {
     return (
         <div className="banner">
-            <img src={bannerBG} style={BG} alt="ohoh"></img>
             <img src={pmb} alt="pmb"></img>
+
+            <div className="pens-tv">
+                <h2>P E N S T V</h2>
+                <img src={penstv} alt="ojoj"></img>
+            </div>
         </div>
     )
 }
 
 export default Banner
-
-const BG = {
- width: '120vw',
- height: '80vh'
-}
