@@ -29,6 +29,12 @@ function Widget () {
                 <img src={pens} alt="ojojo"></img>
                 <div className="sosmed">
                     <h4>TEMUKAN KAMI</h4>
+                    <div className="media">
+                        <h4>FB</h4>
+                        <h4>TWT</h4>
+                        <h4>YT</h4>
+                        <h4>IG</h4>
+                    </div>
                 </div>
             </div>
         </div>
