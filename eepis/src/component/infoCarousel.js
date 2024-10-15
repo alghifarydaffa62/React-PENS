@@ -1,5 +1,4 @@
 import pmb from '../img/pmb.jpg'
-import penstv from '../img/penstv.jpg'
 import '../App.css'
 
 function Banner () {
@@ -9,7 +8,7 @@ function Banner () {
 
             <div className="pens-tv">
                 <h2>P E N S T V</h2>
-                <img src={penstv} alt="ojoj"></img>
+                <iframe width="1080" height="608" src="https://www.youtube.com/embed/wQ7IL19ZrxA" title="ZI WBK PENS 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     )
