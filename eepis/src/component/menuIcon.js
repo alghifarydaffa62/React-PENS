@@ -44,19 +44,18 @@ let iconData = [
 function Icon () {
     return(
         <div className="iconsection">
-
-            {
-                iconData.map(icon => {
-                    return(
-                        <div className="icon"  key={icon.id} style={iconStyle}>
-                            <div className="col">
-                                <img src={icon.image} alt="img1"></img>
-                                <h3>{icon.text}</h3>
+            <div className="icon"  >
+                {
+                    iconData.map(layanan => {
+                        return(
+                            <div className="col" key={layanan.id}>
+                                <img src={layanan.image} alt="img1"></img>
+                                <h3>{layanan.text}</h3>
                             </div>
-                        </div>
-                    )
-                })
-            }
+                        )
+                    })
+                }
+            </div>
             
             <img className="barislogo" src={barisan} alt="img"></img>
         </div>
@@ -65,8 +64,3 @@ function Icon () {
 }
 
 export default Icon
-
-const iconStyle = {
-    display: "flex",
-    justifyContent: "center"
-}

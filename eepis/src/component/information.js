@@ -4,6 +4,33 @@ import berita2 from '../img/berita2.jpg'
 import berita3 from '../img/berita3.png'
 import dokumen from '../img/dokumen.jpg'
 
+let dataBerita = [
+    {
+        id: 1,
+        img: {berita3},
+        desc: "Optimalkan Pengajar PTV, PENS Gelar Program Non Degree Peningkatan Kompetensi Dosen Vokasi 2024",
+        tanggal: "October 8, 2024"
+    },
+    {
+        id: 2,
+        img: {berita2},
+        desc: "Bangun Sikap Nasionalisme, PENS Gelar Upacara Peringatan Hari Kesaktian Pancasila",
+        tanggal: "October 83, 2024"
+    },
+    {
+        id: 3,
+        img: {berita1},
+        desc: "Rangkul Seluruh Ormawa, Siap Berdayakan Desa melalui Workshop PENS Membangun Desa (PMD) 2024",
+        tanggal: "October 3, 2024"
+    },
+    {
+        id: 4,
+        img: {prestasi},
+        desc: "Raih Prestasi Membanggakan, Mahasiswa PENS Sabet Juara Umum dan Dua Penghargaan pada CAD Competition 2024",
+        tanggal: "October 8, 2024"
+    },
+]
+
 function Information() {
     return(
         <div className="information">
@@ -21,38 +48,20 @@ function Information() {
             <div className="berita">
                 <h2>BERITA</h2>
                 <div className="berita-content">
-                    <div className="news">
-                        <img src={berita3} alt="news1"></img>
-                        <div className="headline">
-                            <a href="#hhh"><h4>Optimalkan Pengajar PTV, PENS Gelar Program Non Degree 
-                                Peningkatan Kompetensi Dosen Vokasi 2024</h4></a>
-                            <p>October 8, 2024</p>
-                        </div>
-                    </div>
-                    <div className="news">
-                        <img src={berita2} alt="news2"></img>
-                        <div className="headline">
-                            <a href="#hhh"><h4>Bangun Sikap Nasionalisme, PENS Gelar Upacara
-                                 Peringatan Hari Kesaktian Pancasila</h4></a>
-                            <p>October 3, 2024</p>
-                        </div>
-                    </div>
-                    <div className="news">
-                        <img src={berita1} alt="news3"></img>
-                        <div className="headline">
-                            <a href="#hhh"><h4>Rangkul Seluruh Ormawa, Siap Berdayakan 
-                                Desa melalui Workshop PENS Membangun Desa (PMD) 2024</h4></a>
-                            <p>October 3, 2024</p>
-                        </div>
-                    </div>
-                    <div className="news">
-                        <img src={prestasi} alt="news4"></img>
-                        <div className="headline">
-                            <a href="#hhh"><h4>Raih Prestasi Membanggakan, Mahasiswa PENS \
-                            Sabet Juara Umum dan Dua Penghargaan pada CAD Competition 2024</h4></a>
-                            <p>October 8, 2024</p>
-                        </div>
-                    </div>
+                    {
+                        dataBerita.map(berita => {
+                            return(
+                                <div className="news" key={berita.id}>
+                                    <img src={berita.img} alt="news1"></img>
+                                    <div className="headline">
+                                        <a href="#hhh"><h4>{berita.desc}</h4></a>
+                                        <p>{berita.tanggal}</p>
+                                    </div>
+                                </div>      
+                            )
+                        })
+                    }
+                    
                 </div>
             </div>
             <div className="lainnya">
