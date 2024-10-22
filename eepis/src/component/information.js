@@ -1,31 +1,28 @@
 import prestasi from '../img/prestasi.jpg'
-import berita1 from '../img/berita1.jpg'
-import berita2 from '../img/berita2.jpg'
-import berita3 from '../img/berita3.png'
 import dokumen from '../img/dokumen.jpg'
 
 let dataBerita = [
     {
         id: 1,
-        img: {berita3},
+        img: require('../img/berita3.png'),
         desc: "Optimalkan Pengajar PTV, PENS Gelar Program Non Degree Peningkatan Kompetensi Dosen Vokasi 2024",
         tanggal: "October 8, 2024"
     },
     {
         id: 2,
-        img: {berita2},
+        img: require('../img/berita2.jpg'),
         desc: "Bangun Sikap Nasionalisme, PENS Gelar Upacara Peringatan Hari Kesaktian Pancasila",
         tanggal: "October 83, 2024"
     },
     {
         id: 3,
-        img: {berita1},
+        img: require('../img/berita1.jpg'),
         desc: "Rangkul Seluruh Ormawa, Siap Berdayakan Desa melalui Workshop PENS Membangun Desa (PMD) 2024",
         tanggal: "October 3, 2024"
     },
     {
         id: 4,
-        img: {prestasi},
+        img: require('../img/prestasi.jpg'),
         desc: "Raih Prestasi Membanggakan, Mahasiswa PENS Sabet Juara Umum dan Dua Penghargaan pada CAD Competition 2024",
         tanggal: "October 8, 2024"
     },
