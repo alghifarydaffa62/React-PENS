@@ -6,37 +6,63 @@
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  /* margin-top: 2rem; */
-  text-align: center;
-  /* background-color: rgb(14, 14, 65); */
-  padding-block: 1rem;
   align-items: center;
+  padding: 1rem;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
-nav ul {
-  list-style: none;
+.navbar-menu {
   display: flex;
-  gap: 2.4rem;
-}
-nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-.drop {
-  display: block;
-}
-.dropdown {
-  background-color: black;
-}
-.dropdown ul {
-  flex-direction: column;
-  text-align: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   gap: 1rem;
-  padding: 1.2rem;
-  display: none;
 }
-.menudrop.triggered {
-  display: block;
+
+.navbar-item {
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s;
+  font-size: 0.9rem;
+}
+
+.navbar-item:hover {
+  color: #ddd;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #dbdbdb;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-item {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #555;
 }
 .jumbotron {
   text-align: center;
