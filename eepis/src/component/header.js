@@ -137,7 +137,7 @@ function Header() {
         >
           TENTANG PENS
           {dropdownOpen && (
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu" style={dropnav}>
               <li className="dropdown-item">Tentang PENS</li>
               <li className="dropdown-item">Visi Misi</li>
               <li className="dropdown-item">Struktur Organisasi</li>
@@ -218,4 +218,8 @@ const drop = {
   display: "flex",
   gap: '1rem',
   // right: '100px'
+}
+
+const dropnav = {
+  width: '10rem'
 }
