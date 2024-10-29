@@ -32,14 +32,14 @@
 }
 
 .dropdown-menu {
+  color: black;
   position: absolute;
   top: 100%;
-  left: 0;
   background-color: #dbdbdb;
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 180px;
+  width: 40rem;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   opacity: 0;
@@ -47,7 +47,10 @@
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 999;
 }
-
+.dropdown-menu h3 {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu {
   opacity: 1;
@@ -55,9 +58,8 @@
 }
 
 .dropdown-item {
-  padding: 0.8rem 1rem;
+  padding: 0.5rem 0.7rem;
   cursor: pointer;
-  color: black;
   transition: background-color 0.3s;
 }
 
