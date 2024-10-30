@@ -6,6 +6,10 @@ import ijazah from '../img/ijazah.jpeg'
 import cpns from '../img/cpns.jpg'
 import kampus from '../img/kam.jpg'
 import pens from '../img/pens.png'
+import YT from '../img/Youtube.jpeg'
+import FB from '../img/facebook.jpeg'
+import IG from '../img/instagram.jpeg'
+import twt from '../img/twitter.jpeg'
 
 function Widget () {
     return(
@@ -30,10 +34,10 @@ function Widget () {
                 <div className="sosmed">
                     <h4>TEMUKAN KAMI</h4>
                     <div className="media">
-                        <h4>FB</h4>
-                        <h4>TWT</h4>
-                        <h4>YT</h4>
-                        <h4>IG</h4>
+                        <img src={FB} alt="ojoj"></img>
+                        <img src={twt} alt="ojojo"></img>
+                        <img src={YT} alt="ojoj"></img>
+                        <img src={IG} alt="ljoj"></img>
                     </div>
                 </div>
             </div>
